@@ -1,5 +1,6 @@
 {
     "editor.wordWrap": "on",
     "explorer.fileNesting.enabled": false,
-    "explorer.excludeGitIgnore": false
+    "explorer.excludeGitIgnore": false,
+    "outline.collapseItems": "alwaysCollapse"
 }
