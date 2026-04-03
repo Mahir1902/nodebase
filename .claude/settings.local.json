@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(shadcn)",
+      "Bash(curl -s https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/base/examples/field-example.tsx)",
+      "Bash(grep -r \"font-family\\\\|@font-face\" /Users/mahirhaque/Documents/Coding/n8n-clone/src --include=*.css --include=*.tsx --include=*.ts)",
+      "Bash(ls:*)"
+    ]
+  }
+}
