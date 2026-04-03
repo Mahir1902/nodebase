@@ -66,8 +66,8 @@ export default function RegisterForm() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle>Welcome back</CardTitle>
-        <CardDescription>Enter your credentials to sign in</CardDescription>
+        <CardTitle>Create an account</CardTitle>
+        <CardDescription>Enter your details to create an account</CardDescription>
       </CardHeader>
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -117,10 +117,10 @@ export default function RegisterForm() {
                   id="password"
                   type={showPassword ? 'text' : 'password'}
                   placeholder="••••••••"
-                  autoComplete="current-password"
+                  autoComplete="new-password"
                   aria-invalid={!!errors.password}
                   className="pr-10"
-                  {...register('password')}
+                  {...field}
                 />
                 <button
                   type="button"
@@ -169,7 +169,7 @@ export default function RegisterForm() {
             {isSubmitting && (
               <LoaderCircleIcon data-icon="inline-start" className="animate-spin" />
             )}
-            Sign in
+            Create account
           </Button>
           <div className="text-center text-sm">
           Already have an account?{' '}
