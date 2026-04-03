@@ -13,6 +13,7 @@ import { Input } from '@/components/ui/input';
 import { Field, FieldDescription, FieldGroup, FieldLabel } from '@/components/ui/field';
 import { authClient } from '@/lib/auth-client';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const loginSchema = z.object({
   email: z.email('Please enter a valid email address'),
@@ -61,11 +62,24 @@ export default function LoginForm() {
             <div className='grid gap-6'>
                 <div className= "flex flex-col gap-4">
                     <Button variant="outline" className="w-full">
-                        
-                        Sign in with Google
+                        <Image
+                        src="logo/google.svg"
+                        alt="Google"
+                        width={20}
+                        height={20}
+                        className="size-4"
+                        />
+                        Continue in with Google
                     </Button>
                     <Button variant="outline" className="w-full">
-                        Sign in with github
+                        <Image 
+                        src="logo/github.svg"
+                        alt="Github"
+                        width={20}
+                        height={20}
+                        className="size-4"
+                        />
+                        Continue in with github
                     </Button>
                 </div>
 
